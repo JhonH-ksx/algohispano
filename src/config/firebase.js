@@ -1,17 +1,22 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getFirestore } from "firebase/firestore";
+import { initializeAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
 
-// Your web app's Firebase configuration
+
 const firebaseConfig = {
-  apiKey: "AIzaSyA-50-uFp5bSyg8KzyZN7_woiFs-gfAoNw",
-  authDomain: "algo-hispano-v2.firebaseapp.com",
-  projectId: "algo-hispano-v2",
-  storageBucket: "algo-hispano-v2.appspot.com",
-  messagingSenderId: "69923650641",
-  appId: "1:69923650641:web:1906cc2a4fb4c658808c70"
+  apiKey: process.env.REACT_APP_APIKEY ,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN ,
+  projectId: process.env.REACT_APP_PROJECTID ,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET ,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID ,
+  appId: process.env.REACT_APP_APPID 
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+const appCheck = initializeAppCheck(app, {
+  provider: new ReCaptchaV3Provider(process.env.REACT_APP_SECRETKEY_CHECKAPP),
+  isTokenAutoRefreshEnabled: true
+});
+
+export const db = getFirestore(app);
