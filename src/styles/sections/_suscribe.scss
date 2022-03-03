@@ -36,7 +36,7 @@
     &__input {
       box-sizing: border-box;
       width: 100%;
-      border: .2rem solid darken($color-text-resalt, 20%);
+      border: .2rem solid darken($color-text-resalt, 50%);
       padding: .8rem 1.7rem;
       border-radius: .6rem;
       margin: .5rem 0;
@@ -61,8 +61,8 @@
       font-weight: bold;
     
       &:disabled {
-        background-color: #635296;
-        border-color: #43307a;
+        background-color: #221350b9;
+        border-color: #1d0e4b;
         pointer-events: none;
         opacity: .5;
       }

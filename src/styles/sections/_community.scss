@@ -1,11 +1,13 @@
 .community {
-  background-color: $color-contrast;
   padding: 6rem $padding-x-mobile 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: darken($color-text-third, 20%);
-  
+  background-color: $color-contrast;
+  background-image:  radial-gradient(#230764e5 1.1px, transparent 1.1px), radial-gradient(#230764e5 1.1px, #0A192F 1.1px);
+  background-size: 44px 44px;
+  background-position: 0 0,22px 22px;
   @include laptop {
     padding: 10rem $padding-x 5rem;
   }

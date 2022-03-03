@@ -13,8 +13,8 @@
   align-items: center;
   background-color: $color-main;
   padding: 2.6rem $padding-x-mobile 2.6rem;
-  transition: background-color .3s ease-out;
-
+  transition: background-color .3s ease;
+  
   @include laptop {
     position: fixed;
     padding: 2.6rem $padding-x-mobile;
@@ -23,9 +23,12 @@
   @include desktop {
     padding: 2.6rem $padding-x 2.6rem calc($padding-x - 2rem);
   }
-
+  
   &--crazy {
     background-color: $color-contrast;
+    background-image:  radial-gradient(#230764e5 1.1px, transparent 1.1px), radial-gradient(#230764e5 1.1px, #0A192F 1.1px);
+    background-size: 44px 44px;
+    background-position: 0 0,22px 22px;
   }
 
   &__logo-container {

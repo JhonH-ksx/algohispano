@@ -6,7 +6,7 @@ function FormSuscribe() {
   const [isError, setIsError] = useState(false);
   const [isValid, setIsValid] = useState(false);
 
-  const {value: { name, email }, handleInputChange, handleSubmit} = useForm({
+  const {value: { name, email }, handleInputChange, handleSubmit, reset } = useForm({
     name: '',
     email: ''
   });
@@ -22,6 +22,7 @@ function FormSuscribe() {
   const submit = (e) => {
     e.preventDefault();
     handleSubmit({ setIsError, funcSubmit, formValidation });
+    reset();
   }
 
   return (
