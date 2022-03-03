@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/algosmed/static/css/main.ab875497.css",
-    "main.js": "/algosmed/static/js/main.a8f6661b.js",
-    "static/media/BungeeInline-Regular.ttf": "/algosmed/static/media/BungeeInline-Regular.d20e7ecc71e7d71bc7c7.ttf",
-    "static/media/OpenSans-Medium.ttf": "/algosmed/static/media/OpenSans-Medium.f0cdede053a22b990af8.ttf",
-    "static/media/OpenSans-Regular.ttf": "/algosmed/static/media/OpenSans-Regular.d7d7b8359eeb9cddfba6.ttf",
-    "static/media/OpenSans-Bold.ttf": "/algosmed/static/media/OpenSans-Bold.6e27168fc8a5a200a026.ttf",
-    "static/media/OpenSans-Light.ttf": "/algosmed/static/media/OpenSans-Light.846a12caf01a940847a7.ttf",
-    "static/media/Logo.png": "/algosmed/static/media/Logo.9eeeb16d9ed7fb5c4643.png",
-    "static/media/laberinto_example.webp": "/algosmed/static/media/laberinto_example.cecd9c1b48119fa68afb.webp",
-    "index.html": "/algosmed/index.html",
-    "main.ab875497.css.map": "/algosmed/static/css/main.ab875497.css.map",
-    "main.a8f6661b.js.map": "/algosmed/static/js/main.a8f6661b.js.map"
+    "main.css": "/algohispano/static/css/main.36a30b21.css",
+    "main.js": "/algohispano/static/js/main.ab6f7ee2.js",
+    "static/media/BungeeInline-Regular.ttf": "/algohispano/static/media/BungeeInline-Regular.d20e7ecc71e7d71bc7c7.ttf",
+    "static/media/OpenSans-Medium.ttf": "/algohispano/static/media/OpenSans-Medium.f0cdede053a22b990af8.ttf",
+    "static/media/OpenSans-Regular.ttf": "/algohispano/static/media/OpenSans-Regular.d7d7b8359eeb9cddfba6.ttf",
+    "static/media/OpenSans-Bold.ttf": "/algohispano/static/media/OpenSans-Bold.6e27168fc8a5a200a026.ttf",
+    "static/media/OpenSans-Light.ttf": "/algohispano/static/media/OpenSans-Light.846a12caf01a940847a7.ttf",
+    "static/media/Logo.png": "/algohispano/static/media/Logo.9eeeb16d9ed7fb5c4643.png",
+    "static/media/laberinto_example.webp": "/algohispano/static/media/laberinto_example.cecd9c1b48119fa68afb.webp",
+    "index.html": "/algohispano/index.html",
+    "main.36a30b21.css.map": "/algohispano/static/css/main.36a30b21.css.map",
+    "main.ab6f7ee2.js.map": "/algohispano/static/js/main.ab6f7ee2.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab875497.css",
-    "static/js/main.a8f6661b.js"
+    "static/css/main.36a30b21.css",
+    "static/js/main.ab6f7ee2.js"
   ]
 }
