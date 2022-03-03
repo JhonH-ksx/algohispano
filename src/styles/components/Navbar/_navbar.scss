@@ -1,0 +1,180 @@
+.navbar {
+  height: 4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Open Sans';
+  z-index: 9;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-main;
+  padding: 2.6rem $padding-x-mobile 2.6rem;
+  transition: background-color .3s ease-out;
+
+  @include laptop {
+    position: fixed;
+    padding: 2.6rem $padding-x-mobile;
+  }
+  
+  @include desktop {
+    padding: 2.6rem $padding-x 2.6rem calc($padding-x - 2rem);
+  }
+
+  &--crazy {
+    background-color: $color-contrast;
+  }
+
+  &__logo-container {
+    &__logo {
+      width: 6rem;
+      height: 6rem;
+      margin-right: 2rem;
+    }
+  }
+
+  @include mobile_and_tablet_only {
+    &__links-mobile__btn {
+      display: block;
+      position: fixed;
+      visibility: visible;
+      border: none;
+      background-color: transparent;
+      font-size: 2rem;
+      left: 0;
+      color: lighten($color-text-main, 30%);
+      margin-left: $padding-x-mobile - .2rem;
+      z-index: 11;
+
+      @include laptop {
+        display: none;
+      }
+    }
+
+    &__links-mobile--show {
+      display: flex!important;
+      color: #fff!important;
+      animation-name: links_animation;
+      animation-duration: .3s;
+    }
+    
+    &__links-mobile--hide { 
+      display: none!important;
+      color: #fff!important;
+    }
+
+    @keyframes links_animation {
+      from { width: 1rem; }
+      to { width: calc(min(27rem, 47%)); }
+    }
+  }
+
+  &__links {
+    padding-top: 8rem;
+    align-items: center;
+    background-color: darken($color-contrast, 4%);
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: calc(min(27rem, 47%));
+
+    @include laptop {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      background-color: transparent;
+      padding-top: 0rem;
+      flex-direction: row;
+      width: 70%;
+      position: relative;
+    }
+
+    &__item {
+      margin: 2rem auto;
+      color: $color-text-third;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      text-decoration-thickness: .2rem;
+      transition: text-decoration-color .3s ease-out;
+      
+      @include laptop {
+        color: $color-text-main;
+        margin: 0 .8rem;
+      }
+      
+      @include desktop {
+        margin: 0 1.3rem;
+      }
+
+      &:hover {
+        text-decoration-color: $color-text-main;
+      }
+    }
+  }
+  
+  &__extra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    width: 90%;
+    
+    @include laptop {
+      justify-content: right;
+      width: 30%;
+    }
+
+    &__social {
+      margin-right: 1rem;
+
+      @include laptop {
+        margin-right: 1.2rem;
+        display: flex;
+      }
+
+      @include desktop {
+        margin-right: 2rem;
+      }
+
+      &__link {
+        margin: auto 1rem;
+        
+        @include desktop {
+          margin: 1.3rem;
+        }
+
+        i {
+          font-size: 1.7rem;
+          color: $color-text-main;
+          transition: color .3s ease-in-out;
+          
+          &:hover {
+            color: $color-text-secondary;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.opposite-color {
+  color: $color-text-third;
+  
+  &:hover {
+    text-decoration-color: darken($color-text-third, 20%);
+  }
+}
+
+.opposite-hover {
+  color: $color-text-third!important;
+
+  &:hover {
+    color: $color-text-resalt!important;
+  }
+}

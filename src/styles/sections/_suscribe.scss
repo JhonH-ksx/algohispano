@@ -1,0 +1,71 @@
+.suscribe {
+  min-height: 20vh;
+  background-color: $color-main;
+  padding: 3rem $padding-x-mobile;
+  
+  @include tablet {
+    padding: 7rem $padding-x;
+  }
+
+  &__info {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.6rem;
+    
+    p {
+      margin-top: 2rem;
+    }
+    
+    @include tablet {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto;
+    width: calc(min(90%, 70rem));
+    
+    @include tablet {
+      margin: 4rem auto;
+      width: calc(min(45%, 50rem));
+    }
+
+    &__input {
+      box-sizing: border-box;
+      width: 100%;
+      border: .2rem solid darken($color-text-resalt, 20%);
+      padding: .8rem 1.7rem;
+      border-radius: .6rem;
+      margin: .5rem 0;
+      font-size: 1.5rem;
+    
+      &:focus {
+        outline: thin solid darken($color-text-resalt, 70%);
+      }
+    }
+
+    &__submit-btn {
+      cursor: pointer;
+      margin-top: 1.5rem;
+      width: 13rem;
+      padding: .9rem;
+      letter-spacing: .15rem;
+      font-size: 1.4rem;
+      background-color: darken($color-text-resalt, 20%);
+      border: .1rem solid darken($color-text-resalt, 30%);
+      border-radius: .3rem;
+      color: $color-text-third;
+      font-weight: bold;
+    
+      &:disabled {
+        background-color: #635296;
+        border-color: #43307a;
+        pointer-events: none;
+        opacity: .5;
+      }
+    }
+  }
+}

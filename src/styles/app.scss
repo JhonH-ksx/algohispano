@@ -1,0 +1,32 @@
+//* core
+@import './core/reset';
+@import './core/font-face';
+@import './core/media-queries';
+@import './core/core';
+@import './core/colors';
+@import './core/variables';
+
+
+//* animation
+@import './animations/logoEffect';
+
+
+//* components
+//* _ Navbar
+@import './components/Navbar/navbar';
+@import './components/Navbar/button_theme';
+//* _ Card
+@import './components/Card/card';
+
+
+//* pages
+@import './pages/general';
+
+
+//* sections
+@import './sections/presentation';
+@import './sections/community';
+@import './sections/activities';
+@import './sections/blog';
+@import './sections/roadmap';
+@import './sections/suscribe';
