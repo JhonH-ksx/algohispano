@@ -1,0 +1,20 @@
+.main {
+  background-color: $color-main;
+  min-height: calc(100vh - 10rem);  
+
+  @include tablet {
+    padding-top: 10rem;
+  }
+}
+
+.section-title{ 
+  font-size: 2.5rem;
+  color: $color-text-third;
+  font-family: 'Bungee Inline';
+  margin-bottom: 4rem;
+
+  @include tablet {
+    margin-bottom: 3rem;
+  }
+}
+

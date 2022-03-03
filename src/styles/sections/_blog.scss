@@ -1,0 +1,9 @@
+.blog {
+  min-height: 60vh;
+  background-color: $color-contrast;
+  padding: 4rem $padding-x-mobile;
+  
+  @include laptop {
+    padding: 10rem $padding-x 5rem;
+  }
+}
